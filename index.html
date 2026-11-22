@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 <style>
-:root{--paper:#f5efe5;--paper-2:#ede5d7;--card:#fbf8f2;--ink:#231d17;--ink-soft:#4a4036;--ink-mute:#6f6458;--line:#dcd1c0;--night:#1c1712;--night-2:#26201a;--cream:#f3ead9;--cream-mute:#c9bca7;--copper:#b8683a;--copper-deep:#9a522a;--gold:#f0b840;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--wrap:1240px}
+:root{--paper:#f5efe5;--paper-2:#ede5d7;--card:#fbf8f2;--ink:#231d17;--ink-soft:#4a4036;--ink-mute:#6f6458;--line:#dcd1c0;--night:#1c1712;--night-2:#26201a;--cream:#f3ead9;--cream-mute:#c9bca7;--copper:#dba66b;--copper-deep:#dba66b;--gold:#f0b840;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--wrap:1240px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -23,15 +23,15 @@ i[data-lucide],svg.lucide{width:18px;height:18px;stroke-width:1.75}
 .lead{font-size:19px;color:var(--ink-soft);max-width:56ch;text-wrap:pretty}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font:600 15px/1 var(--sans);border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:background .2s,color .2s,border-color .2s,transform .2s}
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
-.btn-copper{background:var(--copper);color:#fff}.btn-copper:hover{background:var(--copper-deep);color:#fff}
+.btn-copper{background:#dba66b;color:var(--ink)}.btn-copper:hover{background:#cc9455;color:var(--ink)}
 .btn-line{border-color:rgba(243,234,217,.35);color:var(--cream)}.btn-line:hover{border-color:var(--cream);color:var(--cream)}
 .btn-ink{border-color:var(--ink);color:var(--ink)}.btn-ink:hover{background:var(--ink);color:var(--paper)}
 /* nav */
 .nav{position:absolute;top:0;left:0;right:0;z-index:32}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:110px}
-.brand{display:flex;flex-direction:column;line-height:1;color:var(--ink)}.brand:hover{text-decoration:none;color:var(--ink)}
-.brand b{font-family:var(--serif);font-weight:500;font-size:38px;letter-spacing:.02em}
-.brand span{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-mute);margin-top:8px}
+.brand{display:inline-flex;align-items:center;flex-direction:column;line-height:1;color:var(--ink)}.brand:hover{text-decoration:none;color:var(--ink)}
+.brand b{font-family:var(--serif);font-weight:500;font-size:46px;letter-spacing:.02em}
+.brand span{white-space:nowrap;padding-left:.18em;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-mute);margin-top:8px}
 .nav-links{display:flex;gap:36px}
 .nav-links a{color:var(--ink);font-size:14px;font-weight:500;letter-spacing:.04em}.nav-links a:hover{color:var(--copper-deep)}
 .nav-cta{display:flex;align-items:center;gap:22px}
@@ -116,8 +116,10 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .how p{color:var(--ink-soft);font-size:16px}
 /* reviews */
 .reviews{background:var(--night);color:var(--cream)}
-.reviews .eyebrow{color:#e7b98f}.reviews .h2 em{color:#e7b98f}
+.reviews .eyebrow{color:#dba66b}.reviews .h2 em{color:#dba66b}
 .quote-big{font-family:var(--serif);font-size:clamp(30px,3.6vw,46px);line-height:1.2;font-weight:400;max-width:24ch;margin-top:36px;text-wrap:balance}
+.qpair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px}.qpair>div+div{padding-left:72px;border-left:1px solid rgba(243,234,217,.14)}
+@media (max-width:1000px){.qpair{grid-template-columns:1fr;gap:48px}.qpair>div+div{padding:48px 0 0;border-left:0;border-top:1px solid rgba(243,234,217,.14)}}
 .quote-by{margin-top:24px;font-size:14px;color:var(--cream-mute);display:flex;gap:14px;align-items:center}
 .quote-by .stars{color:var(--gold);letter-spacing:3px}
 .rv-track{margin-top:80px;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
@@ -134,7 +136,7 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .tier{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 36px;display:flex;flex-direction:column}
 .tier.feat{background:var(--ink);color:var(--cream);border-color:var(--ink)}
 .tier-k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--copper-deep)}
-.tier.feat .tier-k{color:#e7b98f}
+.tier.feat .tier-k{color:#dba66b}
 .tier-p{font-family:var(--serif);font-size:52px;font-weight:500;line-height:1;margin:22px 0 6px}
 .tier-p small{font-family:var(--sans);font-size:15px;color:var(--ink-mute);font-weight:400}
 .tier.feat .tier-p small{color:var(--cream-mute)}
@@ -142,25 +144,25 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .tier.feat .tier-d{color:var(--cream-mute)}
 .tier ul{list-style:none;margin:26px 0 32px;display:grid;gap:10px;font-size:15px;flex:1}
 .tier li{display:flex;gap:10px;align-items:flex-start}.tier li svg{color:var(--copper);flex:none;margin-top:3px;width:16px;height:16px}
-.tier.feat li svg{color:#e7b98f}
+.tier.feat li svg{color:#dba66b}
 .tier .btn{justify-content:center}
 .tier.feat .btn-line{border-color:rgba(243,234,217,.4)}
 .note{margin-top:28px;font-size:14px;color:var(--ink-mute);text-align:center}
 /* contact */
 .contact{background:var(--night);color:var(--cream)}
-.contact .eyebrow{color:#e7b98f}.contact .h2 em{color:#e7b98f}
+.contact .eyebrow{color:#dba66b}.contact .h2 em{color:#dba66b}
 .ct-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px}
 .ct-list{margin-top:48px;display:grid;gap:26px}
 .ct-list div{display:grid;gap:4px}
 .ct-list small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-mute)}
 .ct-list a,.ct-list span{font-family:var(--serif);font-size:28px;color:var(--cream)}
-.ct-list a:hover{color:#e7b98f}
+.ct-list a:hover{color:#dba66b}
 form{background:var(--night-2);border:1px solid rgba(243,234,217,.1);border-radius:20px;padding:44px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 label{display:block;font-size:13px;color:var(--cream-mute);margin-bottom:22px}
 input,textarea,select{display:block;width:100%;margin-top:8px;background:transparent;border:0;border-bottom:1px solid rgba(243,234,217,.25);color:var(--cream);font:16px var(--sans);padding:10px 0;outline:none;transition:border-color .2s}
 select option{background:var(--night-2)}
-input:focus,textarea:focus,select:focus{border-color:#e7b98f}
+input:focus,textarea:focus,select:focus{border-color:#dba66b}
 textarea{resize:vertical;min-height:110px}
 .sent{display:none;text-align:center;padding:60px 0}
 .sent h3{font-family:var(--serif);font-size:38px;font-weight:500}
@@ -183,7 +185,7 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 .how div,.how div+div{padding:32px 0 8px;border-left:0;border-bottom:1px solid var(--line)}
 .section{padding:88px 0}
 }
-@media (max-width:560px){.nav-cta .btn{display:none}.nav .wrap{height:88px}.brand b{font-size:30px}.brand span{font-size:9px;letter-spacing:.26em}.burger{width:46px;height:46px}.menu{top:84px;left:16px;right:16px;width:auto}.hero{padding-top:116px}.hero h1{font-size:46px}.hero-actions .btn{flex:1;justify-content:center}.show{aspect-ratio:1/0.86;margin:-10px -20px 0}.frame{width:94%}.frame .bar{height:22px}.frame .bar span{display:none}.hero-foot{margin-top:56px}.hero-foot .wrap{gap:16px}.hero-foot div{font-size:11px}.h2{font-size:38px}.svc-row h3{font-size:28px}.proj-meta{flex-direction:column;gap:4px}.rv{width:280px;padding:22px}.tier{padding:32px 26px}.ct-list a,.ct-list span{font-size:22px;word-break:break-word}footer .wrap{flex-direction:column;align-items:flex-start}footer nav{flex-wrap:wrap;gap:18px}.wrap{padding:0 20px}.row{grid-template-columns:1fr;gap:0}form{padding:28px}.tag{display:none}}
+@media (max-width:560px){.nav-cta .btn{display:none}.nav .wrap{height:88px}.brand b{font-size:36px}.brand span{font-size:8.5px;letter-spacing:.2em}.burger{width:46px;height:46px}.menu{top:84px;left:16px;right:16px;width:auto}.hero{padding-top:116px}.hero h1{font-size:46px}.hero-actions .btn{flex:1;justify-content:center}.show{aspect-ratio:1/0.86;margin:-10px -20px 0}.frame{width:94%}.frame .bar{height:22px}.frame .bar span{display:none}.hero-foot{margin-top:56px}.hero-foot .wrap{gap:16px}.hero-foot div{font-size:11px}.h2{font-size:38px}.svc-row h3{font-size:28px}.proj-meta{flex-direction:column;gap:4px}.rv{width:280px;padding:22px}.tier{padding:32px 26px}.ct-list a,.ct-list span{font-size:22px;word-break:break-word}footer .wrap{flex-direction:column;align-items:flex-start}footer nav{flex-wrap:wrap;gap:18px}.wrap{padding:0 20px}.row{grid-template-columns:1fr;gap:0}form{padding:28px}.tag{display:none}}
 </style>
 </head>
 <body>
@@ -203,7 +205,7 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 <div class="wrap hero-grid">
 <div>
 <p class="eyebrow">Websites &amp; technology, made locally</p>
-<h1>Beautiful websites, <em>and tech</em> that simply works.</h1>
+<h1>Beautiful websites <em>and tech</em> that simply works.</h1>
 <p class="sub">We design and build websites with real character, and look after your technology at home or in your business. Friendly, honest help, with a little bit of magic.</p>
 <div class="hero-actions"><a class="btn btn-copper" href="#contact">Summon a Wizard <i data-lucide="arrow-right"></i></a><a class="btn btn-ink" href="#work">See our work</a></div>
 <div class="hero-proof"><span class="stars">★★★★★</span><span><strong>5.0</strong> across every client review</span></div>
@@ -277,8 +279,10 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 <section class="section reviews" id="reviews" data-screen-label="Reviews">
 <div class="wrap">
 <p class="eyebrow">Kind words</p>
-<p class="quote-big">"Half a dozen issues a competitor called too technical. Arrived on time, fixed everything quickly. Will hire again."</p>
-<div class="quote-by"><span class="stars">★★★★★</span>Small business owner, Wellington</div>
+<div class="qpair"><div><p class="quote-big">"Half a dozen issues a competitor called too technical. Arrived on time, fixed everything quickly. Will hire again."</p>
+<div class="quote-by"><span class="stars">★★★★★</span>Small business owner, Wellington</div></div>
+<div><p class="quote-big">"Fantastic knowledge and great service at a very reasonable price. Highly recommended. 10 out of 10."</p>
+<div class="quote-by"><span class="stars">★★★★★</span>General support client</div></div></div>
 <div class="rv-track"><div class="rv-grid" id="rvg">
 <div class="rv"><div class="stars">★★★★★</div><p>"Arrived on time, understood and solved all my computer issues in a timely manner. Plan on using again."</p><small>Tech support client</small></div>
 <div class="rv"><div class="stars">★★★★★</div><p>"Cleaned up my old Mac and freed up heaps of space so I could finally update everything. Sorted my email issues too. Thank you!"</p><small>Device optimisation client</small></div>
@@ -293,9 +297,9 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 <div class="wrap">
 <div style="text-align:center;display:grid;justify-items:center;gap:24px"><p class="eyebrow">Honest pricing</p><h2 class="h2">Clear prices, <em>no surprises.</em></h2></div>
 <div class="price-grid">
+<div class="tier"><span class="tier-k">Tech support</span><div class="tier-p">$80-140<small> /hr</small></div><p class="tier-d">A sliding scale, so everyone can get help whatever their budget. Pay what you can.</p><ul><li><i data-lucide="check"></i>Remote help, NZ-wide</li><li><i data-lucide="check"></i>On-site Wellington visits</li><li><i data-lucide="check"></i>Setup &amp; troubleshooting</li><li><i data-lucide="check"></i>Virus removal &amp; security</li></ul><a class="btn btn-ink" href="#contact">Book support</a></div>
 <div class="tier"><span class="tier-k">Websites</span><div class="tier-p">Custom</div><p class="tier-d">Thoughtfully designed websites, quoted per project after a free chat.</p><ul><li><i data-lucide="check"></i>Custom design &amp; build</li><li><i data-lucide="check"></i>Mobile-first and fast</li><li><i data-lucide="check"></i>SEO-ready from day one</li><li><i data-lucide="check"></i>Ongoing care available</li></ul><a class="btn btn-ink" href="#contact">Get a quote</a></div>
 <div class="tier feat"><span class="tier-k">Business solutions</span><div class="tier-p">Custom</div><p class="tier-d">Websites, AI, security and technology projects shaped around your business.</p><ul><li><i data-lucide="check"></i>Website design &amp; development</li><li><i data-lucide="check"></i>AI integration &amp; automation</li><li><i data-lucide="check"></i>Security review &amp; setup</li><li><i data-lucide="check"></i>Microsoft 365 &amp; cloud</li><li><i data-lucide="check"></i>Ongoing support</li></ul><a class="btn btn-copper" href="#contact">Book a free consultation</a></div>
-<div class="tier"><span class="tier-k">Tech support</span><div class="tier-p">$80-140<small> /hr</small></div><p class="tier-d">A sliding scale, so everyone can get help whatever their budget. Pay what you can.</p><ul><li><i data-lucide="check"></i>Remote help, NZ-wide</li><li><i data-lucide="check"></i>On-site Wellington visits</li><li><i data-lucide="check"></i>Setup &amp; troubleshooting</li><li><i data-lucide="check"></i>Virus removal &amp; security</li></ul><a class="btn btn-ink" href="#contact">Book support</a></div>
 </div>
 <p class="note">Project and consulting work is quoted individually. Get in touch for a free, no-obligation conversation.</p>
 </div>
@@ -339,6 +343,8 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 
 <script>
 lucide.createIcons();
+const fitBrand=()=>document.querySelectorAll('.brand').forEach(b=>{const t=b.querySelector('b'),s=b.querySelector('span');if(!t||!s)return;s.style.letterSpacing='0px';const n=s.textContent.length,gap=(t.getBoundingClientRect().width-s.getBoundingClientRect().width)/Math.max(1,n-1);s.style.letterSpacing=gap+'px';s.style.marginRight=(-gap)+'px'});
+
 (()=>{const show=document.querySelector('.show'),fr=[...show.querySelectorAll('.frame')],N=fr.length,P=52500,TAU=Math.PI*2;let t0=performance.now(),off=0,paused=false,pt=0,hv=0,front=-1,mx=-1,my=-1,last=performance.now();
 const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
 addEventListener('mousemove',e=>{if(!matchMedia('(hover:hover) and (pointer:fine)').matches||innerWidth<600)return;mx=e.clientX;my=e.clientY},{passive:true});document.addEventListener('mouseleave',()=>{mx=my=-1});
