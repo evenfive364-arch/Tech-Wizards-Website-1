@@ -10,12 +10,12 @@
 <meta name="geo.placename" content="Wellington">
 <meta name="theme-color" content="#f5efe5">
 <meta property="og:locale" content="en_NZ">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=5" media="(prefers-color-scheme: light)">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32-white.png?v=5" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png?v=5" media="(prefers-color-scheme: light)">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48-white.png?v=5" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=5" media="(prefers-color-scheme: light)">
-<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192-white.png?v=5" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/fav-32-dark.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/fav-32-light.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/fav-48-dark.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/fav-48-light.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/fav-192-dark.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/fav-192-light.png" media="(prefers-color-scheme: dark)">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="canonical" href="https://techwizards.co.nz/">
 <meta property="og:type" content="website">
@@ -480,7 +480,7 @@ lucide.createIcons();
 (()=>{const w=document.getElementById('h1first'),b=document.querySelector('.nav .brand');if(!w||!b)return;const fit=()=>{b.style.marginLeft='';if(innerWidth<=1000)return;const img=[...b.querySelectorAll('.brand-logo')].find(i=>i.offsetWidth);if(!img)return;const pad=img.offsetWidth*4/900;const d=w.getBoundingClientRect().left-(img.getBoundingClientRect().left+pad);b.style.marginLeft=(parseFloat(getComputedStyle(b).marginLeft)+d)+'px'};document.fonts.ready.then(fit);addEventListener('resize',fit);addEventListener('load',fit);fit()})();
 (()=>{const w=document.getElementById('h1first'),e=document.querySelector('.hero-head .eyebrow');if(!w||!e)return;const fit=()=>{e.style.letterSpacing='';e.style.marginRight='';e.style.fontSize='';e.style.paddingLeft='';if(innerWidth<=560)return;const n=e.textContent.length;const sp=document.createElement('span');sp.textContent=e.textContent;sp.style.cssText='visibility:hidden;position:absolute;white-space:nowrap;letter-spacing:0';e.appendChild(sp);const base=sp.getBoundingClientRect().width;sp.remove();const tw=w.getBoundingClientRect().width;const g=(tw-base)/(n-1);if(g>0&&g<20){e.style.letterSpacing=g+'px';e.style.marginRight=(-g)+'px'}else if(g<=0){const fs=parseFloat(getComputedStyle(e).fontSize)*(tw-(n-1)*1.5)/base;e.style.fontSize=fs+'px';e.style.letterSpacing='1.5px';e.style.marginRight='-1.5px'}e.style.paddingLeft=(w.getBoundingClientRect().left-e.getBoundingClientRect().left+parseFloat(getComputedStyle(e).paddingLeft||0))+'px'};document.fonts.ready.then(fit);addEventListener('resize',fit);fit()})();
 (()=>{const hd=document.querySelector('.hero-head'),h=hd&&hd.querySelector('h1');if(!h)return;const fit=()=>{hd.style.width='';const r=document.createRange();r.selectNodeContents(h);let L=1e9,R=-1e9;for(const b of r.getClientRects()){if(b.width<2)continue;L=Math.min(L,b.left);R=Math.max(R,b.right)}if(R>L)hd.style.width=Math.ceil(R-hd.getBoundingClientRect().left)+'px'};document.fonts.ready.then(fit);addEventListener('resize',fit);fit()})();
-(()=>{const m=matchMedia('(prefers-color-scheme: dark)'),set=()=>{const dk=m.matches;document.querySelectorAll('link[rel="icon"]').forEach(l=>{const s=l.getAttribute('sizes').split('x')[0];l.href='assets/favicon-'+s+(dk?'-white':'')+'.png?v=5';l.removeAttribute('media')})};set();m.addEventListener('change',set)})();
+(()=>{const m=matchMedia('(prefers-color-scheme: dark)'),set=()=>{const dk=m.matches;document.querySelectorAll('link[rel="icon"]').forEach(l=>{const s=l.getAttribute('sizes').split('x')[0];l.href='assets/fav-'+s+(dk?'-light':'-dark')+'.png';l.removeAttribute('media')})};set();m.addEventListener('change',set)})();
 (()=>{const nz=()=>{let h;try{h=+new Intl.DateTimeFormat('en-NZ',{hour:'numeric',hourCycle:'h23',timeZone:'Pacific/Auckland'}).format(new Date())}catch(e){h=new Date().getHours()}return(h>=17||h<6)?'dark':'light'};setInterval(()=>{let s=null;try{s=localStorage.getItem('tw-theme')}catch(e){}if(!s)document.documentElement.setAttribute('data-theme',nz())},60000)})();
 (()=>{const b=document.getElementById('totop');if(!b)return;let tk=false;const up=()=>{tk=false;const max=document.documentElement.scrollHeight-innerHeight;b.classList.toggle('is-on',max>0&&scrollY/max>=.3)};addEventListener('scroll',()=>{if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});up();b.onclick=()=>scrollTo({top:0,behavior:'smooth'})})();
 (()=>{const p=document.getElementById('tpick');if(!p)return;
