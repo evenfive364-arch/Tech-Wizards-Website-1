@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tech Wizards | Websites and Technology, Wellington</title>
+<title>Tech Support &amp; Web Design Wellington &amp; K&#257;piti | Tech Wizards</title>
+<meta name="description" content="Friendly tech support, computer repairs and website design in Wellington, K&#257;piti Coast, Porirua and the Hutt. On-site or remote IT help for homes and businesses. Call 022 393 0789.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="NZ-WGN">
+<meta name="geo.placename" content="Wellington">
+<meta name="theme-color" content="#f5efe5">
+<meta property="og:locale" content="en_NZ">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://techwizards.co.nz/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tech Wizards">
+<meta property="og:url" content="https://techwizards.co.nz/">
+<meta property="og:title" content="Tech Wizards | Tech Support &amp; Web Design, Wellington &amp; K&#257;piti">
+<meta property="og:description" content="Beautiful websites and tech that works like magic. Friendly tech support, computer repairs and website design across Wellington and the K&#257;piti Coast.">
+<meta property="og:image" content="https://techwizards.co.nz/assets/share-preview-2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tech Wizards - recent website builds">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tech Wizards | Tech Support &amp; Web Design, Wellington &amp; K&#257;piti">
+<meta name="twitter:description" content="Friendly tech support, computer repairs and website design across Wellington and the K&#257;piti Coast.">
+<meta name="twitter:image" content="https://techwizards.co.nz/assets/share-preview-2.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 <style>
-:root{--paper:#f5efe5;--paper-2:#ede5d7;--card:#fbf8f2;--ink:#231d17;--ink-soft:#4a4036;--ink-mute:#6f6458;--line:#dcd1c0;--night:#1c1712;--night-2:#26201a;--cream:#f3ead9;--cream-mute:#c9bca7;--copper:#dba66b;--copper-deep:#dba66b;--gold:#f0b840;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--wrap:1240px}
+:root{--paper:#efe5d5;--paper-2:#e6dac7;--card:#f5ecdf;--ink:#231d17;--ink-soft:#4a4036;--ink-mute:#6f6458;--line:#dcd1c0;--night:#1c1712;--night-2:#26201a;--cream:#f3ead9;--cream-mute:#c9bca7;--copper:#dba66b;--copper-deep:#dba66b;--gold:#f0b840;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--wrap:1240px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -28,10 +53,12 @@ i[data-lucide],svg.lucide{width:18px;height:18px;stroke-width:1.75}
 .btn-ink{border-color:var(--ink);color:var(--ink)}.btn-ink:hover{background:var(--ink);color:var(--paper)}
 /* nav */
 .nav{position:absolute;top:0;left:0;right:0;z-index:32}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:110px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:180px}
 .brand{display:inline-flex;align-items:center;flex-direction:column;line-height:1;color:var(--ink)}.brand:hover{text-decoration:none;color:var(--ink)}
+.brand-logo{height:128px;width:auto;display:block}
+.nav .brand{margin-left:-6px}
 .brand b{font-family:var(--serif);font-weight:500;font-size:46px;letter-spacing:.02em}
-.brand span{white-space:nowrap;padding-left:.18em;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-mute);margin-top:8px}
+.brand span{white-space:nowrap;padding-left:.18em;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-mute);margin-top:8px}
 .nav-links{display:flex;gap:36px}
 .nav-links a{color:var(--ink);font-size:14px;font-weight:500;letter-spacing:.04em}.nav-links a:hover{color:var(--copper-deep)}
 .nav-cta{display:flex;align-items:center;gap:22px}
@@ -53,10 +80,12 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .menu .btn{width:100%;justify-content:center;margin-top:12px}
 .nav-cta .tel{color:var(--ink);font-size:14px;display:flex;gap:8px;align-items:center}
 /* hero */
-.hero{background:linear-gradient(180deg,#f7f1e7 0%,#efe5d5 100%);color:var(--ink);position:relative;overflow:hidden;padding:168px 0 0}
+.hero{background:linear-gradient(180deg,#f7f1e7 0%,var(--paper) 100%);color:var(--ink);position:relative;overflow:hidden;padding:230px 0 0}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 520px at 78% 38%,rgba(214,140,90,.20),transparent 70%),radial-gradient(600px 400px at 10% 90%,rgba(240,184,64,.12),transparent 70%);pointer-events:none}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
-.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(52px,6.4vw,92px);line-height:.98;letter-spacing:-.015em;text-wrap:balance;margin:26px 0 28px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(52px,6.4vw,92px);line-height:.98;letter-spacing:-.015em;text-wrap:balance;margin:10px 0 28px}
+.hero-head{display:grid;width:fit-content;max-width:100%}.hero-head .eyebrow{justify-content:flex-start;text-align:left;white-space:nowrap}
+.hero h1 .h1-plain{font-style:italic}.hero h1 .h1-gold{color:var(--copper-deep)}
 .hero h1 em{font-style:italic;color:var(--copper-deep)}
 .hero .eyebrow{color:var(--copper-deep)}
 .hero p.sub{font-size:19px;color:var(--ink-soft);max-width:40ch;text-wrap:pretty}
@@ -65,7 +94,7 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .hero-proof .stars{color:var(--copper);letter-spacing:3px;font-size:15px}
 .hero-proof strong{color:var(--ink);font-weight:600}
 /* showcase */
-.show.zoomed{z-index:40}.show{position:relative;z-index:1;height:640px;margin:-230px -220px 0 -20px}
+.show.zoomed{z-index:40}.show{position:relative;z-index:1;height:640px;margin:-352px -220px 0 -20px}
 .frame{position:absolute;left:50%;top:50%;width:50%;background:#0f0c09;border-radius:12px;overflow:hidden;box-shadow:0 40px 80px -24px rgba(60,40,20,.38),0 0 0 1px rgba(35,29,23,.08);will-change:transform,opacity;backface-visibility:hidden;transform:translate3d(-50%,-50%,0)}
 .frame .bar{height:30px;display:flex;align-items:center;gap:6px;padding:0 12px;background:#2a231c}
 .frame .bar i{width:9px;height:9px;border-radius:50%;background:#4a3f33;display:block}
@@ -85,7 +114,8 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .intro div:last-child p+p{margin-top:18px}
 .sign{margin-top:28px;font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink)}
 /* services */
-.svc{margin-top:72px;border-top:1px solid var(--line)}
+.svc-title{max-width:none}@media (min-width:1001px){.svc-title{white-space:nowrap;font-size:clamp(36px,3.8vw,58px)}}
+.svc{margin-top:48px;border-top:1px solid var(--line)}
 .svc-row{display:grid;grid-template-columns:80px minmax(0,4fr) minmax(0,5fr) minmax(0,3fr);gap:32px;padding:38px 0;border-bottom:1px solid var(--line);align-items:start;transition:background .25s}
 .svc-row:hover{background:var(--paper-2)}
 .svc-n{font-family:var(--serif);font-size:22px;color:var(--copper-deep);padding-left:8px}
@@ -100,7 +130,7 @@ body.menu-open .menu{opacity:1;visibility:visible;transform:none}
 .proj{grid-column:span 6}
 .proj.wide{grid-column:span 12}
 .proj .pic{border-radius:14px;overflow:hidden;background:var(--night);box-shadow:0 30px 60px -30px rgba(35,29,23,.45)}
-.proj .pic img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.proj .pic img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .proj.wide .pic img{aspect-ratio:21/9}
 .proj:hover .pic img{transform:scale(1.025)}
 .proj-meta{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-top:20px}
@@ -168,6 +198,35 @@ textarea{resize:vertical;min-height:110px}
 .sent h3{font-family:var(--serif);font-size:38px;font-weight:500}
 .sent p{color:var(--cream-mute);margin-top:10px}
 form.done .fields{display:none}form.done .sent{display:block}
+.areas{list-style:none;margin-top:36px;display:grid;gap:0;border-top:1px solid var(--line)}
+.areas li{display:grid;gap:2px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink-mute);font-size:15px}
+.areas strong{font-family:var(--serif);font-weight:500;font-size:24px;color:var(--ink)}
+.faq{margin-top:28px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--serif);font-size:24px;font-weight:500;line-height:1.25;display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--copper-deep);font-family:var(--sans);font-size:24px;line-height:1;flex:none}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin-top:12px;color:var(--ink-soft);font-size:16px;text-wrap:pretty}
+.tpick{position:fixed;right:12px;bottom:12px;z-index:50;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 20px 50px -20px rgba(0,0,0,.4);display:grid;gap:10px;width:250px;opacity:0;transform:translateY(12px);transition:opacity .35s,transform .35s;pointer-events:none}
+.tpick.is-open{opacity:1;transform:none;pointer-events:auto}
+.tpick-h{display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--serif);font-size:20px;font-weight:500}
+.tpick-x{background:none;border:0;color:var(--ink-mute);cursor:pointer;padding:4px;display:grid;place-items:center}
+.tpick-x:hover{color:var(--ink)}
+.tpick-o{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tpick-o button{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:600 14px var(--sans);cursor:pointer;transition:border-color .2s,background .2s}
+.tpick-o button:hover{border-color:var(--copper)}
+.tpick-o button.on{background:var(--copper);border-color:var(--copper);color:#231d17}
+@media (min-width:561px){.tpick{padding:12px 14px;border-radius:14px}.tpick-h{font-size:17px}.tpick-o{gap:6px}.tpick-o button{padding:7px 12px;font-size:13px}.tpick-o button svg{width:15px;height:15px}}
+@media (max-width:560px){.tpick-h{justify-content:center;position:relative;text-align:center}.tpick-x{position:absolute;right:0;top:50%;transform:translateY(-50%)}.tpick-o{max-width:320px;margin-left:auto;margin-right:auto;width:100%}}
+@media (max-width:560px){.tpick{left:0;right:0;bottom:0;width:auto;border-radius:16px 16px 0 0;border-left:0;border-right:0;border-bottom:0;padding:14px 18px calc(14px + env(safe-area-inset-bottom))}}
+.totop{position:fixed;right:24px;bottom:24px;z-index:49;width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 14px 34px -14px rgba(0,0,0,.45);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s,bottom .35s,background .2s,color .2s}
+.totop.is-on{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:var(--copper);border-color:var(--copper);color:#231d17}
+body.tpick-open .totop{bottom:130px}
+@media (max-width:560px){.totop{right:14px;bottom:14px;width:46px;height:46px}body.tpick-open .totop{bottom:150px}}
+.hero p.sub,.hero .hero-actions{max-height:0;opacity:0;overflow:hidden;transform:translateY(10px);transition:max-height .7s ease,opacity .6s ease .1s,transform .6s ease .1s}
+.hero p.sub.is-shown,.hero .hero-actions.is-shown{max-height:340px;overflow:visible;opacity:1;transform:none}
 /* footer */
 footer{background:var(--night);color:var(--cream-mute);border-top:1px solid rgba(243,234,217,.1);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-top:36px;padding-bottom:36px}
@@ -185,30 +244,81 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 .how div,.how div+div{padding:32px 0 8px;border-left:0;border-bottom:1px solid var(--line)}
 .section{padding:88px 0}
 }
-@media (max-width:560px){.nav-cta .btn{display:none}.nav .wrap{height:88px}.brand b{font-size:36px}.brand span{font-size:8.5px;letter-spacing:.2em}.burger{width:46px;height:46px}.menu{top:84px;left:16px;right:16px;width:auto}.hero{padding-top:116px}.hero h1{font-size:46px}.hero-actions .btn{flex:1;justify-content:center}.show{aspect-ratio:1/0.86;margin:-10px -20px 0}.frame{width:94%}.frame .bar{height:22px}.frame .bar span{display:none}.hero-foot{margin-top:56px}.hero-foot .wrap{gap:16px}.hero-foot div{font-size:11px}.h2{font-size:38px}.svc-row h3{font-size:28px}.proj-meta{flex-direction:column;gap:4px}.rv{width:280px;padding:22px}.tier{padding:32px 26px}.ct-list a,.ct-list span{font-size:22px;word-break:break-word}footer .wrap{flex-direction:column;align-items:flex-start}footer nav{flex-wrap:wrap;gap:18px}.wrap{padding:0 20px}.row{grid-template-columns:1fr;gap:0}form{padding:28px}.tag{display:none}}
+@media (max-width:560px){.nav-cta .btn{display:none}.nav .wrap{height:104px}.brand-logo{height:128px;width:auto;display:block}
+.nav .brand{margin-left:-6px}
+.brand b{font-size:36px}.brand-logo{height:84px}.brand span{font-size:8.5px;letter-spacing:.2em}.burger{width:46px;height:46px}.menu{top:84px;left:16px;right:16px;width:auto}.hero{padding-top:150px}.hero h1{font-size:min(52px,12.4vw)}.hero-head{max-width:100%}.hero-head .eyebrow{white-space:normal;font-size:13px;letter-spacing:.14em}.hero .eyebrow{font-size:14px}.hero-actions .btn{flex:1;justify-content:center}.show{aspect-ratio:1/0.86;margin:-10px -20px 0}.frame{width:94%}.frame .bar{height:22px}.frame .bar span{display:none}.hero-foot{margin-top:56px}.hero-foot .wrap{gap:16px}.hero-foot div{font-size:11px}.h2{font-size:38px}.svc-row h3{font-size:28px}.proj-meta{flex-direction:column;gap:4px}.rv{width:280px;padding:22px}.tier{padding:32px 26px}.ct-list a,.ct-list span{font-size:22px;word-break:break-word}footer .wrap{flex-direction:column;align-items:flex-start}footer nav{flex-wrap:wrap;gap:18px}.wrap{padding:0 20px}.row{grid-template-columns:1fr;gap:0}form{padding:28px}.tag{display:none}}
+
+.theme-btn{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);background:transparent;color:var(--ink);display:grid;place-items:center;cursor:pointer;flex:none;transition:background .2s,color .2s}
+.theme-btn:hover{background:var(--ink);color:var(--paper)}
+.theme-btn .i-sun{display:none}html[data-theme="dark"] .theme-btn .i-sun{display:block}html[data-theme="dark"] .theme-btn .i-moon{display:none}
+.brand-logo.dk{display:none}html[data-theme="dark"] .brand-logo.lt{display:none}html[data-theme="dark"] .brand-logo.dk{display:block}
+html[data-theme="dark"]{--paper:#0a0f1c;--paper-2:#0f1626;--card:#121a2c;--ink:#f3ead9;--ink-soft:#d4c8b5;--ink-mute:#a89b88;--line:#222c42;--night:#060a14;--night-2:#0c1220;color-scheme:dark}
+html[data-theme="dark"] .hero::before{display:none}
+html[data-theme="dark"] .brand span{color:#fff}
+html[data-theme="dark"] .hero{background:linear-gradient(180deg,#0a0f1c 0%,#0e1526 100%)}
+html[data-theme="dark"] .tier,html[data-theme="dark"] .tier.feat{background:#16203a;color:var(--ink);border-color:#dba66b}
+html[data-theme="dark"] .tier.feat .tier-p small,html[data-theme="dark"] .tier.feat .tier-d{color:var(--ink-mute)}
+html[data-theme="dark"] .btn-copper,html[data-theme="dark"] .btn-copper:hover{color:#231d17}
+html[data-theme="dark"] .tag{background:#f3ead9;color:#231d17}
+html[data-theme="dark"] .frame{box-shadow:0 40px 80px -24px rgba(0,0,0,.7),0 0 0 1px rgba(243,234,217,.1)}
+html[data-theme="dark"] .proj .pic{box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+html[data-theme="dark"] .menu{box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+body,.hero,.tier,.menu,.svc-row{transition:background-color .3s,color .3s}
+
+.sky{display:none}
+html[data-theme="dark"]{background:#0a0f1c}
+html[data-theme="dark"] body{background:transparent}
+html[data-theme="dark"] .sky{display:block;position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(1100px 700px at 8% 12%,rgba(52,74,150,.32),transparent 65%),radial-gradient(900px 700px at 100% 85%,rgba(24,92,110,.22),transparent 65%),radial-gradient(700px 500px at 30% 100%,rgba(219,166,107,.08),transparent 70%),linear-gradient(180deg,#0a0f1c,#0b1222 60%,#0a0f1c)}
+.sky i{position:absolute;top:0;left:0;width:1px;height:1px;border-radius:50%;background:transparent;animation:tw 6s ease-in-out infinite alternate}
+.sky i:nth-child(2){width:2px;height:2px;animation-duration:9s;animation-delay:-3s}
+.sky i:nth-child(3){width:1.5px;height:1.5px;animation-duration:7.5s;animation-delay:-5s}
+@keyframes tw{0%{opacity:.35}100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.sky i{animation:none}}
+html[data-theme="dark"] .hero{background:transparent}
+html[data-theme="dark"] .work{background:rgba(18,28,52,.45)}
+html[data-theme="dark"] .reviews,html[data-theme="dark"] .contact,html[data-theme="dark"] footer{background:rgba(5,9,18,.55)}
+html[data-theme="dark"] .hero h1 em,html[data-theme="dark"] .h2 em{text-shadow:0 0 28px rgba(219,166,107,.35)}
+html[data-theme="dark"] .tier,html[data-theme="dark"] .tier.feat{background:linear-gradient(180deg,rgba(30,42,76,.85),rgba(18,26,46,.85))}
+html[data-theme="dark"] .tier{transition:box-shadow .3s,transform .3s}html[data-theme="dark"] .tier:hover{box-shadow:0 0 0 1px #dba66b,0 20px 60px -20px rgba(219,166,107,.35);transform:translateY(-3px)}
+html[data-theme="dark"] .svc-row:hover{background:rgba(52,74,150,.14)}
+html[data-theme="dark"] .rv{background:rgba(30,42,76,.35);border-color:rgba(219,166,107,.18)}
+html[data-theme="dark"] .proj:hover .pic{box-shadow:0 30px 70px -25px rgba(219,166,107,.3)}
+html[data-theme="dark"] form{background:rgba(22,32,58,.6);border-color:rgba(219,166,107,.18)}
+html[data-theme="dark"] .btn-copper{box-shadow:0 8px 30px -8px rgba(219,166,107,.55)}
+html[data-theme="dark"] .menu{background:#121a2c}
+@media (max-width:560px){.theme-btn{width:46px;height:46px}}
+@media (max-width:560px){.nav .wrap{padding-top:18px}}
+@media (max-width:560px){html.tw-gate .hero-foot,html.tw-gate .hero~section,html.tw-gate footer{opacity:0;visibility:hidden}.hero-foot,.hero~section,footer{transition:opacity .6s ease}}
+@media (max-width:560px){.hero .hero-proof{max-height:0;opacity:0;overflow:hidden;margin-top:0;padding-top:0;border-top-color:transparent;transform:translateY(10px);transition:max-height .7s ease,opacity .6s ease .1s,transform .6s ease .1s,margin-top .7s ease,padding-top .7s ease}.hero .hero-proof.is-shown{max-height:200px;opacity:1;transform:none;margin-top:44px;padding-top:28px;border-top-color:var(--line)}}
+@media (max-width:560px){.hero-head{margin:0 auto;width:100%;justify-items:center;text-align:center}.hero-head .eyebrow{justify-content:center!important;text-align:center!important}.hero h1{text-align:center}.hero p.sub{text-align:center;margin-left:auto;margin-right:auto}.hero-grid{gap:32px}.hero h1{margin-bottom:20px}}
+@media (max-width:560px) and (max-height:760px){.hero{padding-top:140px}.show{aspect-ratio:1/0.78}.hero-grid{gap:24px}}
 </style>
+<script>document.documentElement.classList.add('tw-gate');addEventListener('scroll',function g(){if(scrollY>30){document.documentElement.classList.remove('tw-gate');removeEventListener('scroll',g)}},{passive:true});</script>
+<script>(function(){try{var t=localStorage.getItem('tw-theme');if(!t){var h;try{h=+new Intl.DateTimeFormat('en-NZ',{hour:'numeric',hourCycle:'h23',timeZone:'Pacific/Auckland'}).format(new Date())}catch(e){h=new Date().getHours()}t=(h>=17||h<6)?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","ProfessionalService"],"@id":"https://techwizards.co.nz/#business","name":"Tech Wizards","url":"https://techwizards.co.nz/","logo":"https://techwizards.co.nz/assets/logo.png","image":"https://techwizards.co.nz/assets/og-image.jpg","description":"Friendly tech support, computer repairs, website design, cybersecurity and AI consulting for homes and businesses in Wellington and the Kāpiti Coast.","telephone":"+64223930789","email":"info@techwizards.co.nz","priceRange":"$$","currenciesAccepted":"NZD","address":{"@type":"PostalAddress","addressLocality":"Wellington","addressRegion":"Wellington","addressCountry":"NZ"},"areaServed":[{"@type":"Place","name":"Wellington"},{"@type":"Place","name":"Kāpiti Coast"},{"@type":"Place","name":"Paraparaumu"},{"@type":"Place","name":"Waikanae"},{"@type":"Place","name":"Ōtaki"},{"@type":"Place","name":"Raumati"},{"@type":"Place","name":"Paekākāriki"},{"@type":"Place","name":"Porirua"},{"@type":"Place","name":"Lower Hutt"},{"@type":"Place","name":"Upper Hutt"},{"@type":"Place","name":"Petone"},{"@type":"Country","name":"New Zealand"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Tech Wizards services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tech support & computer repairs","description":"In-home and remote computer repairs, device setup, Wi-Fi, email and virus removal.","areaServed":"Wellington, Kāpiti Coast, New Zealand"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Website design & development","description":"Custom coded websites plus WordPress, Squarespace and Wix, SEO-ready and mobile-first.","areaServed":"Wellington, Kāpiti Coast, New Zealand"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI consulting & automation","description":"Workflow automation, chat assistants and Microsoft Copilot setup.","areaServed":"Wellington, Kāpiti Coast, New Zealand"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Cybersecurity","description":"Multi-factor authentication, phishing protection, Microsoft 365 security and backups.","areaServed":"Wellington, Kāpiti Coast, New Zealand"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Business technology","description":"Microsoft 365, Google Workspace, cloud migration and remote work setup.","areaServed":"Wellington, Kāpiti Coast, New Zealand"}}]}},{"@type":"WebSite","@id":"https://techwizards.co.nz/#website","url":"https://techwizards.co.nz/","name":"Tech Wizards","inLanguage":"en-NZ","publisher":{"@id":"https://techwizards.co.nz/#business"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you offer in-home tech support in Wellington and Kāpiti?","acceptedAnswer":{"@type":"Answer","text":"Yes. We come to your home or business across Wellington, the Kāpiti Coast, Porirua and the Hutt Valley to fix slow computers, set up devices, sort Wi-Fi and email, and remove viruses."}},{"@type":"Question","name":"How much does tech support cost?","acceptedAnswer":{"@type":"Answer","text":"Tech support is $80-140 per hour on a sliding scale, so you can pay what suits your budget. Remote help is available NZ-wide."}},{"@type":"Question","name":"Can you build a website for my small business?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design custom coded websites and work with WordPress, Squarespace and Wix. Every site is mobile-friendly, fast and set up for Google from day one. Websites are quoted per project after a free chat."}},{"@type":"Question","name":"Do you help with Microsoft 365, cybersecurity and AI?","acceptedAnswer":{"@type":"Answer","text":"We set up and secure Microsoft 365 and Google Workspace, add multi-factor authentication and backups, and introduce practical AI and automation tools for small businesses."}},{"@type":"Question","name":"How quickly can you help?","acceptedAnswer":{"@type":"Answer","text":"Get in touch by phone, text or the form and we'll reply within one business day, often sooner for urgent tech problems."}}]}]}</script>
 </head>
 <body>
+<div class="sky" aria-hidden="true"><i></i><i></i><i></i></div>
 <header class="nav">
 <div class="wrap">
-<a class="brand" href="#top"><b>Tech Wizards</b><span>Wellington, Aotearoa</span></a>
-<div class="nav-cta"><a class="tel" href="tel:0223930789"><i data-lucide="phone"></i>022 393 0789</a><a class="btn btn-copper" href="#contact">Summon a Wizard</a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
+<a class="brand" href="#top" aria-label="Tech Wizards home"><img class="brand-logo lt" src="assets/logo.png?v=2" alt="Tech Wizards"><img class="brand-logo dk" src="assets/logo-light.png?v=2" alt="Tech Wizards"><span>Wellington, Aotearoa</span></a>
+<div class="nav-cta"><a class="tel" href="tel:+64223930789"><i data-lucide="phone"></i>022 393 0789</a><a class="btn btn-copper" href="#contact">Summon a Wizard</a><button class="theme-btn" id="themeBtn" aria-label="Toggle light and dark mode"><i class="i-moon" data-lucide="moon"></i><i class="i-sun" data-lucide="sun"></i></button><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
 </div>
 </header>
 <div class="menu" id="menu">
-<nav><a href="#services"><small>01</small>Services</a><a href="#work"><small>02</small>Our Work</a><a href="#pricing"><small>03</small>Pricing</a><a href="#reviews"><small>04</small>Reviews</a><a href="#contact"><small>05</small>Contact</a></nav>
-<div class="menu-info"><a href="tel:0223930789"><i data-lucide="phone"></i>022 393 0789</a><a href="mailto:info@techwizards.co.nz"><i data-lucide="mail"></i>info@techwizards.co.nz</a></div>
+<nav><a href="#services"><small>01</small>Services</a><a href="#work"><small>02</small>Our Work</a><a href="#pricing"><small>03</small>Pricing</a><a href="#reviews"><small>04</small>Reviews</a><a href="#areas"><small>05</small>Areas &amp; FAQ</a><a href="#contact"><small>06</small>Contact</a></nav>
+<div class="menu-info"><a href="tel:+64223930789"><i data-lucide="phone"></i>022 393 0789</a><a href="mailto:info@techwizards.co.nz"><i data-lucide="mail"></i>info@techwizards.co.nz</a></div>
 <a class="btn btn-copper" href="#contact">Summon a Wizard</a>
 </div>
 
 <section class="hero" id="top" data-screen-label="Hero">
 <div class="wrap hero-grid">
 <div>
-<p class="eyebrow">Websites &amp; technology, made locally</p>
-<h1>Beautiful websites <em>and tech</em> that simply works.</h1>
-<p class="sub">We design and build websites with real character, and look after your technology at home or in your business. Friendly, honest help, with a little bit of magic.</p>
+<div class="hero-head"><p class="eyebrow">Websites &amp; technology, locally</p>
+<h1><span id="h1first">Beautiful</span> websites <span class="h1-plain">and tech</span> that <span class="h1-gold">works</span> <em>like magic.</em></h1></div>
+<p class="sub">We design and build websites with real character, and look after your technology at home or in your business, with friendly tech support across Wellington and the K&#257;piti Coast. Honest help, with a little bit of magic.</p>
 <div class="hero-actions"><a class="btn btn-copper" href="#contact">Summon a Wizard <i data-lucide="arrow-right"></i></a><a class="btn btn-ink" href="#work">See our work</a></div>
-<div class="hero-proof"><span class="stars">★★★★★</span><span><strong>5.0</strong> across every client review</span></div>
+<div class="hero-proof"><span class="stars">★★★★★</span><span>Average rating <strong>5.0</strong></span></div>
 </div>
 <div class="show" aria-label="Recent website builds">
 <div class="frame f1"><div class="bar"><i></i><i></i><i></i><span>heartstrust.nz</span></div><img src="assets/work-hearts.jpg" alt="H.E.A.R.T.S Charitable Trust website"></div>
@@ -239,15 +349,15 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 </div>
 </section>
 
-<section class="section" id="services" style="padding-top:0" data-screen-label="Services">
+<section class="section" id="services" style="padding-top:0;margin-top:-40px" data-screen-label="Services">
 <div class="wrap">
-<p class="eyebrow">What we do</p>
-<h2 class="h2" style="margin-top:24px;max-width:16ch">Everything your business needs, <em>under one roof.</em></h2>
+<p class="eyebrow" style="justify-content:center;text-align:center">What we do</p>
+<h2 class="h2 svc-title" style="margin-top:20px;text-align:center">Tech support &amp; web design, <em>under one roof.</em></h2>
 <div class="svc">
-<div class="svc-row"><span class="svc-n">01</span><h3>Technical Support</h3><p>Friendly, patient help for devices, software and everyday tech problems, at your place or remotely anywhere in New Zealand.</p><ul><li>Troubleshooting &amp; repairs</li><li>Device setup &amp; migration</li><li>Email &amp; software help</li><li>Virus &amp; malware removal</li></ul></div>
-<div class="svc-row"><span class="svc-n">02</span><h3>Website Design &amp; Development</h3><p>Distinctive, fast websites designed around your brand and the people you want to reach. Built to look beautiful and be easy for you to update.</p><ul><li>Custom design &amp; build</li><li>Mobile-first and quick to load</li><li>SEO-ready from day one</li><li>Ongoing care &amp; updates</li></ul></div>
+<div class="svc-row"><span class="svc-n">01</span><h3>Tech Support &amp; Computer Repairs</h3><p>Friendly, patient help for devices, software and everyday tech problems, at your place or remotely anywhere in New Zealand.</p><ul><li>Troubleshooting &amp; repairs</li><li>Device setup &amp; migration</li><li>Email &amp; software help</li><li>Virus &amp; malware removal</li></ul></div>
+<div class="svc-row"><span class="svc-n">02</span><h3>Website Design &amp; Development</h3><p>Distinctive, fast websites designed around your brand and the people you want to reach. Built to look beautiful and be easy for you to update.</p><ul><li>Custom coded websites &amp; domains</li><li>WordPress, Squarespace, Wix and more</li><li>Custom design &amp; build</li><li>Mobile-first and quick to load</li><li>SEO-ready from day one</li><li>Ongoing care &amp; updates</li></ul></div>
 <div class="svc-row"><span class="svc-n">03</span><h3>AI Consulting &amp; Automation</h3><p>Practical tools that take repetitive work off your plate, set up sensibly and taught clearly so your team actually uses them.</p><ul><li>Workflow automation</li><li>Chat assistants</li><li>Microsoft Copilot setup</li><li>Training for your team</li></ul></div>
-<div class="svc-row"><span class="svc-n">04</span><h3>Cybersecurity &amp; Protection</h3><p>Calm, straightforward security for your accounts, email and data. Good habits and sensible safeguards, without the scare tactics.</p><ul><li>Multi-factor authentication</li><li>Phishing protection</li><li>Microsoft 365 security</li><li>Backups &amp; recovery</li></ul></div>
+<div class="svc-row"><span class="svc-n">04</span><h3>Cybersecurity &amp; Data Protection</h3><p>Calm, straightforward security for your accounts, email and data. Good habits and sensible safeguards, without the scare tactics.</p><ul><li>Multi-factor authentication</li><li>Phishing protection</li><li>Microsoft 365 security</li><li>Backups &amp; recovery</li></ul></div>
 <div class="svc-row"><span class="svc-n">05</span><h3>Business Technology</h3><p>The right platforms, set up well. We help you choose, move and organise the tools your business runs on.</p><ul><li>Microsoft 365 &amp; Google Workspace</li><li>Cloud migration</li><li>Remote work setup</li><li>Technology planning</li></ul></div>
 </div>
 </div>
@@ -257,9 +367,9 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 <div class="wrap">
 <div class="work-head"><div><p class="eyebrow">Selected work</p><h2 class="h2" style="margin-top:24px">Websites with <em>soul.</em></h2></div><p class="lead" style="max-width:42ch">Every site we build starts with listening. Here are a few recent projects for organisations across Aotearoa.</p></div>
 <div class="work-grid">
-<article class="proj wide"><div class="pic"><img src="assets/work-hearts.jpg" alt="H.E.A.R.T.S Charitable Trust homepage"></div><div class="proj-meta"><h3>H.E.A.R.T.S Charitable Trust</h3><span>Charity · Bilingual site</span></div><p>A grounded, cinematic home for an equine wellbeing trust, with English and te reo Māori throughout and a simple path to koha.</p></article>
-<article class="proj"><div class="pic"><img src="assets/work-tantra.jpg" alt="Tantra NZ homepage"></div><div class="proj-meta"><h3>Tantra NZ</h3><span>Practitioner directory</span></div><p>A warm, calm space connecting people with caring practitioners across New Zealand.</p></article>
-<article class="proj"><div class="pic"><img src="assets/work-mystic.jpg" alt="Mystic Creative homepage"></div><div class="proj-meta"><h3>Mystic Creative</h3><span>Online shop · Events</span></div><p>An atmospheric storefront for handcrafted pieces, with shop, classes and events in one place.</p></article>
+<article class="proj wide"><div class="pic"><img src="assets/work-hearts.jpg" alt="H.E.A.R.T.S Charitable Trust website designed by Tech Wizards" loading="lazy" decoding="async" width="1600" height="900"></div><div class="proj-meta"><h3>H.E.A.R.T.S Charitable Trust</h3><span>Charity · Bilingual site</span></div><p>A grounded, cinematic home for an equine wellbeing trust, with English and te reo Māori throughout and a simple path to koha.</p></article>
+<article class="proj"><div class="pic"><img src="assets/work-tantra.jpg" alt="Tantra NZ practitioner directory website designed by Tech Wizards" loading="lazy" decoding="async" width="1600" height="900"></div><div class="proj-meta"><h3>Tantra NZ</h3><span>Practitioner directory</span></div><p>A warm, calm space connecting people with caring practitioners across New Zealand.</p></article>
+<article class="proj"><div class="pic"><img src="assets/work-mystic.jpg" alt="Mystic Creative online shop website designed by Tech Wizards" loading="lazy" decoding="async" width="1600" height="900"></div><div class="proj-meta"><h3>Mystic Creative</h3><span>Online shop · Events</span></div><p>An atmospheric storefront for handcrafted pieces, with shop, classes and events in one place.</p></article>
 </div>
 </div>
 </section>
@@ -270,7 +380,7 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 <h2 class="h2" style="margin-top:24px">Flexible, <em>around your needs.</em></h2>
 <div class="how">
 <div><i data-lucide="coffee"></i><h3>A proper conversation</h3><p>We start by understanding your goals, then recommend only what will genuinely help.</p></div>
-<div><i data-lucide="map-pin"></i><h3>On-site in Wellington</h3><p>In-person projects and support across the Greater Wellington region.</p></div>
+<div><i data-lucide="map-pin"></i><h3>On-site in Wellington &amp; K&#257;piti</h3><p>In-home and in-office support across Wellington, the K&#257;piti Coast, Porirua and the Hutt Valley.</p></div>
 <div><i data-lucide="monitor-smartphone"></i><h3>Remote, NZ-wide</h3><p>Fast, secure remote help for businesses and individuals anywhere in New Zealand.</p></div>
 </div>
 </div>
@@ -293,7 +403,7 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 </div>
 </section>
 
-<section class="section" id="pricing" data-screen-label="Pricing">
+<section class="section" id="pricing" style="padding-bottom:80px" data-screen-label="Pricing">
 <div class="wrap">
 <div style="text-align:center;display:grid;justify-items:center;gap:24px"><p class="eyebrow">Honest pricing</p><h2 class="h2">Clear prices, <em>no surprises.</em></h2></div>
 <div class="price-grid">
@@ -305,6 +415,24 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 </div>
 </section>
 
+<section class="section" id="areas" style="padding-top:0" data-screen-label="Areas and FAQ">
+<div class="wrap">
+<div class="intro" style="align-items:start">
+<div><p class="eyebrow">Where we work</p><h2 class="h2" style="margin-top:24px">Tech support &amp; web design across <em>Wellington &amp; K&#257;piti.</em></h2>
+<p class="lead" style="margin-top:22px">On-site computer help and website design throughout the Greater Wellington region, with fast remote support anywhere in New Zealand.</p>
+<ul class="areas"><li><strong>Wellington City</strong>Te Aro, Karori, Kilbirnie, Johnsonville, Miramar</li><li><strong>K&#257;piti Coast</strong>Paraparaumu, Waikanae, Raumati, Paek&#257;k&#257;riki, &#332;taki</li><li><strong>Porirua</strong>Whitby, Titahi Bay, Plimmerton, Pukerua Bay</li><li><strong>Hutt Valley</strong>Lower Hutt, Upper Hutt, Petone, Eastbourne</li><li><strong>Remote, NZ-wide</strong>Secure remote support for homes and businesses anywhere in Aotearoa</li></ul>
+</div>
+<div><p class="eyebrow">Common questions</p>
+<div class="faq">
+<details open><summary>Do you offer in-home tech support in Wellington and K&#257;piti?</summary><p>Yes. We come to your home or business across Wellington, the K&#257;piti Coast, Porirua and the Hutt Valley to fix slow computers, set up devices, sort Wi-Fi and email, and remove viruses.</p></details>
+<details><summary>How much does tech support cost?</summary><p>Tech support is $80-140 per hour on a sliding scale, so you can pay what suits your budget. Remote help is available NZ-wide.</p></details>
+<details><summary>Can you build a website for my small business?</summary><p>Yes. We design custom coded websites and work with WordPress, Squarespace and Wix. Every site is mobile-friendly, fast and set up for Google from day one. Websites are quoted per project after a free chat.</p></details>
+<details><summary>Do you help with Microsoft 365, cybersecurity and AI?</summary><p>We set up and secure Microsoft 365 and Google Workspace, add multi-factor authentication and backups, and introduce practical AI and automation tools for small businesses.</p></details>
+<details><summary>How quickly can you help?</summary><p>Get in touch by phone, text or the form and we'll reply within one business day, often sooner for urgent tech problems.</p></details>
+</div></div>
+</div>
+</div>
+</section>
 <section class="section contact" id="contact" data-screen-label="Contact">
 <div class="wrap ct-grid">
 <div>
@@ -312,7 +440,7 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 <h2 class="h2" style="margin-top:24px">Let's make something <em>good together.</em></h2>
 <p class="lead" style="color:var(--cream-mute);margin-top:22px">Tell us a little about what you need and we'll reply within one business day.</p>
 <div class="ct-list">
-<div><small>Call or text</small><a href="tel:0223930789">022 393 0789</a></div>
+<div><small>Call or text</small><a href="tel:+64223930789">022 393 0789</a></div>
 <div><small>Email</small><a href="mailto:info@techwizards.co.nz">info@techwizards.co.nz</a></div>
 <div><small>Where</small><span>Greater Wellington &amp; NZ-wide remote</span></div>
 </div>
@@ -336,13 +464,30 @@ footer .brand{color:var(--cream)}footer nav{display:flex;gap:28px}footer a{color
 </section>
 
 <footer><div class="wrap">
-<a class="brand" href="#top"><b style="font-size:22px">Tech Wizards</b></a>
+<a class="brand" href="#top" aria-label="Tech Wizards home"><img src="assets/logo-light.png?v=2" alt="Tech Wizards" style="height:56px;width:auto"></a>
 <nav><a href="#services">Services</a><a href="#work">Our Work</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
-<span>© 2026 Tech Wizards · Wellington, New Zealand</span>
+<span>© 2026 Tech Wizards · Tech support &amp; web design, Wellington &amp; K&#257;piti Coast · <a href="tel:+64223930789">022 393 0789</a></span>
 </div></footer>
 
+<button class="totop" id="totop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+<div class="tpick" id="tpick" role="dialog" aria-label="Choose light or dark mode"><div class="tpick-h">Light or dark mode?<button class="tpick-x" id="tpickX" aria-label="Close"><i data-lucide="x"></i></button></div><div class="tpick-o"><button data-t="light"><i data-lucide="sun"></i>Light</button><button data-t="dark"><i data-lucide="moon"></i>Dark</button></div></div>
 <script>
 lucide.createIcons();
+(()=>{const s=document.querySelector('.hero p.sub'),ha=document.querySelector('.hero .hero-actions'),hp=document.querySelector('.hero .hero-proof');if(!s)return;const els=[s,ha].filter(Boolean),col=s.parentElement;let done=false;const res=()=>{if(done)return;col.style.transition='none';col.style.paddingBottom=(innerWidth>1000?els.reduce((a,e)=>a+e.scrollHeight,0):0)+'px'};res();addEventListener('resize',res);document.fonts.ready.then(res);const on=()=>{if(scrollY>30){done=true;removeEventListener('scroll',on);els.forEach(e=>e.style.maxHeight=e.scrollHeight+'px');col.style.transition='padding-bottom .7s ease';col.style.paddingBottom='0px';els.forEach(e=>e.classList.add('is-shown'));hp&&hp.classList.add('is-shown');setTimeout(()=>els.forEach(e=>e.style.maxHeight='none'),800)}};addEventListener('scroll',on,{passive:true});on()})();
+(()=>{const w=document.getElementById('h1first'),b=document.querySelector('.nav .brand');if(!w||!b)return;const fit=()=>{b.style.marginLeft='';if(innerWidth<=1000)return;const img=[...b.querySelectorAll('.brand-logo')].find(i=>i.offsetWidth);if(!img)return;const pad=img.offsetWidth*4/900;const d=w.getBoundingClientRect().left-(img.getBoundingClientRect().left+pad);b.style.marginLeft=(parseFloat(getComputedStyle(b).marginLeft)+d)+'px'};document.fonts.ready.then(fit);addEventListener('resize',fit);addEventListener('load',fit);fit()})();
+(()=>{const w=document.getElementById('h1first'),e=document.querySelector('.hero-head .eyebrow');if(!w||!e)return;const fit=()=>{e.style.letterSpacing='';e.style.marginRight='';e.style.fontSize='';e.style.paddingLeft='';if(innerWidth<=560)return;const n=e.textContent.length;const sp=document.createElement('span');sp.textContent=e.textContent;sp.style.cssText='visibility:hidden;position:absolute;white-space:nowrap;letter-spacing:0';e.appendChild(sp);const base=sp.getBoundingClientRect().width;sp.remove();const tw=w.getBoundingClientRect().width;const g=(tw-base)/(n-1);if(g>0&&g<20){e.style.letterSpacing=g+'px';e.style.marginRight=(-g)+'px'}else if(g<=0){const fs=parseFloat(getComputedStyle(e).fontSize)*(tw-(n-1)*1.5)/base;e.style.fontSize=fs+'px';e.style.letterSpacing='1.5px';e.style.marginRight='-1.5px'}e.style.paddingLeft=(w.getBoundingClientRect().left-e.getBoundingClientRect().left+parseFloat(getComputedStyle(e).paddingLeft||0))+'px'};document.fonts.ready.then(fit);addEventListener('resize',fit);fit()})();
+(()=>{const hd=document.querySelector('.hero-head'),h=hd&&hd.querySelector('h1');if(!h)return;const fit=()=>{hd.style.width='';const r=document.createRange();r.selectNodeContents(h);let L=1e9,R=-1e9;for(const b of r.getClientRects()){if(b.width<2)continue;L=Math.min(L,b.left);R=Math.max(R,b.right)}if(R>L)hd.style.width=Math.ceil(R-hd.getBoundingClientRect().left)+'px'};document.fonts.ready.then(fit);addEventListener('resize',fit);fit()})();
+(()=>{const r=document.documentElement,ls=[...document.querySelectorAll('link[rel="icon"]')];const set=()=>{const dk=r.getAttribute('data-theme')==='dark';ls.forEach(l=>{const b=l.getAttribute('href').replace('-white.png','.png');l.setAttribute('href',dk?b.replace('.png','-white.png'):b)})};set();new MutationObserver(set).observe(r,{attributes:true,attributeFilter:['data-theme']})})();
+(()=>{const nz=()=>{let h;try{h=+new Intl.DateTimeFormat('en-NZ',{hour:'numeric',hourCycle:'h23',timeZone:'Pacific/Auckland'}).format(new Date())}catch(e){h=new Date().getHours()}return(h>=17||h<6)?'dark':'light'};setInterval(()=>{let s=null;try{s=localStorage.getItem('tw-theme')}catch(e){}if(!s)document.documentElement.setAttribute('data-theme',nz())},60000)})();
+(()=>{const b=document.getElementById('totop');if(!b)return;let tk=false;const up=()=>{tk=false;const max=document.documentElement.scrollHeight-innerHeight;b.classList.toggle('is-on',max>0&&scrollY/max>=.3)};addEventListener('scroll',()=>{if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});up();b.onclick=()=>scrollTo({top:0,behavior:'smooth'})})();
+(()=>{const p=document.getElementById('tpick');if(!p)return;
+const r=document.documentElement,mark=()=>p.querySelectorAll('[data-t]').forEach(b=>b.classList.toggle('on',b.dataset.t===r.getAttribute('data-theme')));
+const close=()=>{p.classList.remove('is-open');document.body.classList.remove('tpick-open')};
+p.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>{r.setAttribute('data-theme',b.dataset.t);try{localStorage.setItem('tw-theme',b.dataset.t)}catch(e){}mark()});
+document.getElementById('tpickX').onclick=close;
+mark();setTimeout(()=>{p.classList.add('is-open');document.body.classList.add('tpick-open')},1200);setTimeout(close,180000)})();
+(()=>{const s=document.querySelector('.sky');if(!s)return;const mk=(n,a)=>{let o=[];for(let i=0;i<n;i++)o.push(`${(Math.random()*100).toFixed(2)}vw ${(Math.random()*100).toFixed(2)}vh 0 0 rgba(243,234,217,${a})`);return o.join(',')};const st=s.querySelectorAll('i');st[0].style.boxShadow=mk(140,.7);st[1].style.boxShadow=mk(40,.9);st[2].style.boxShadow=mk(60,.55)})();
+document.getElementById('themeBtn').addEventListener('click',()=>{const r=document.documentElement,n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('tw-theme',n)}catch(e){}});
 const fitBrand=()=>document.querySelectorAll('.brand').forEach(b=>{const t=b.querySelector('b'),s=b.querySelector('span');if(!t||!s)return;s.style.letterSpacing='0px';const n=s.textContent.length,gap=(t.getBoundingClientRect().width-s.getBoundingClientRect().width)/Math.max(1,n-1);s.style.letterSpacing=gap+'px';s.style.marginRight=(-gap)+'px'});
 
 (()=>{const show=document.querySelector('.show'),fr=[...show.querySelectorAll('.frame')],N=fr.length,P=52500,TAU=Math.PI*2;let t0=performance.now(),off=0,paused=false,pt=0,hv=0,front=-1,mx=-1,my=-1,last=performance.now();
@@ -350,7 +495,7 @@ const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
 addEventListener('mousemove',e=>{if(!matchMedia('(hover:hover) and (pointer:fine)').matches||innerWidth<600)return;mx=e.clientX;my=e.clientY},{passive:true});document.addEventListener('mouseleave',()=>{mx=my=-1});
 let w=show.clientWidth,h=show.clientHeight,restR=null,finR=null,open=false;new ResizeObserver(()=>{w=show.clientWidth;h=show.clientHeight}).observe(show);const zs=[];
 function draw(now){const dt=Math.min(64,now-last);last=now;
-const inR=r=>r&&mx>=r[0]&&mx<=r[2]&&my>=r[1]&&my<=r[3];let over=false;if(mx>=0){over=inR(restR)||(open&&inR(finR))}open=over;
+const inR=r=>r&&mx>=r[0]&&mx<=r[2]&&my>=r[1]&&my<=r[3];let over=false;if(mx>=0&&!document.body.classList.contains('menu-open')){const hit=document.elementFromPoint(mx,my);if(!(hit&&hit.closest('.nav,#menu')))over=inR(restR)||(open&&inR(finR))}open=over;
 if(over&&!paused){paused=true;pt=now}else if(!over&&paused&&hv<.02){paused=false;off+=now-pt}
 hv+=((over?1:0)-hv)*(1-Math.exp(-dt/140));show.classList.toggle('zoomed',hv>.02);
 const el=rm?0:(paused?pt:now)-t0-off,base=el/P*TAU;

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techwizards.co.nz/sitemap.xml
